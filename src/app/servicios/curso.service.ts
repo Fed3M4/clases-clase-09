@@ -45,4 +45,8 @@ export class CursoService {
   obtenerCurso(): Array<Curso>{
     return this.cursos;
   }
+  agregarCurso(curso: Curso) {
+    this.cursos.push(curso);
+    console.log('Curso agregado', this.cursos)
+  }
 }
